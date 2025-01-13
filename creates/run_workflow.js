@@ -1,8 +1,6 @@
 const performResume = async (z, bundle) => {
   const results = bundle.cleanedRequest;
 
-  z.console.log(results);
-
   return [
     {
       success: results.success,
@@ -31,14 +29,9 @@ const perform = async (z, bundle) => {
     },
   };
 
-  z.console.log(options);
-  z.console.log("TEST", bundle.authData.api_key);
-
   return z.request(options).then((response) => {
     response.throwForStatus();
     const results = response.json;
-    z.console.log("results", results);
-    z.console.log(bundle.meta.isLoadingSample);
 
     return { results: results, isLoadingSample: bundle.meta.isLoadingSample };
   });
