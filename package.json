@@ -3,18 +3,13 @@
   "version": "1.0.3",
   "description": "Programmatically run AI-powered workflows created in MindStudio. Pass through data as variables in the workflow, and get an response back from your AI app.",
   "main": "index.js",
-  "scripts": {
-    "test": "jest --testTimeout 10000"
-  },
+  "scripts": {},
   "engines": {
     "node": ">=v18",
     "npm": ">=5.6.0"
   },
   "dependencies": {
     "zapier-platform-core": "19.0.0"
-  },
-  "devDependencies": {
-    "jest": "^29.6.0"
   },
   "private": true,
   "zapier": {
